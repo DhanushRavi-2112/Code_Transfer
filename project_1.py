@@ -7,6 +7,8 @@ for i in range(n):
             print(' ',end='')
     print()
     '''
+from unicodedata import digit
+
 '''
 num=5
 res=1
@@ -182,7 +184,7 @@ for i in range(1,n+1):
     print()'''
 #----------------------------------------------------
 #PATTERN
-n=int(input('Value='))
+#n=int(input('Value='))
 #for i in range(1,n+1):
 #    print('*',i,end=' ')  #O/P:*1 *2 *3
 #----------------------------------
@@ -424,6 +426,7 @@ n=int(input('Value='))
         print(k,end=' ')
     print()'''
 #-----------------------------
+n=int(input('n='))
 '''for i in range(1,n+1):
     for j in range(1,n+1-i):
         print(' ',end=' ')
@@ -495,7 +498,82 @@ for i in range(1,n+1):
         print('*',end=' ')
     print()'''
 #----------------------
-for i in range(1,n+1):
-    for j in range(1,i+1):
-        print(j,end=' ')
+'''for i in range(1,n):
+    for j in range(1,n+2-i):
+        print(n-1,end=' ')
+    for k in range(1,i*2-1):
+        print(' ',end=' ')
+    for l in range(1,n+2-i):
+        print(n-1,end=' ')
     print()
+for m in range(1,n*2+1):
+    print(n-1,end=' ')'''
+#-------------------------
+'''while n<6:
+    print(n)
+    n+=1'''
+#---------------------
+'''while n<10:
+    n+=1
+    continue'''
+#----------------
+#PALINDROME
+'''a=input('word=')
+prm=a[::-1]
+if prm==a:
+    print(a,'is a palindrome')
+else:
+    print(a,'is not a palindrome')'''
+#-------------------------------
+'''a=input('value=')
+a1=str(a)
+prm=a1[::-1]
+if prm==a:
+    print(a,'is a palindrome')
+else:
+    print(a,'is not a palindrome')'''
+#------------------------------------
+'''p=int(input('VALUE='))
+q=str(p)
+l=len(q)
+res=0
+for i in q:
+    res+=int(i)**l
+if res==p:
+    print(p,'is a armstrong')
+else:
+    print(p,'is not ')'''
+#------------------------------------
+'''a=input('word=')
+prm=a[::-1]
+if prm==a:
+    print(a,'is a palindrome')
+else:
+    print(a,'is not a palindrome')'''
+#----------------------------------------------------
+'''n=input('n=')
+res=0
+while n>0:    #REVERSE AND DIGIT ADD
+    digi=n%10
+    res=res*10+digi
+    n=n//10
+print(res)
+for i in n:
+    res=res+int(i)
+print(res)'''
+#-----------------------------------------------------------
+'''n=int(input('VALUE='))
+res=0
+for i in range(1,n):
+    if n%i==0:
+        res+=i
+if res==n:
+    print(n,'IS A PERFECT NUMBER')
+else:
+    print(n,'IS NOT PERFECT NUMBER')'''
+#-----------------------------------------
+'''n=int(input())
+res=1
+for i in range(1,n+1):
+    res*=i
+print(res)'''
