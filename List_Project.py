@@ -72,5 +72,21 @@ m.extend(n)       #Extend means merge the list append the elments;
 print(m)
 m.sort()
 print(m)'''
-#
+#------REVERSE THE LIST--------
+'''n=[9,8,7,6,5]     #INTEGER REVERSE
+n.reverse()
+print(n)'''
+#----STRING REVERSE--------
+'''n=['a','b','c','d','e']
+n.reverse()
+print(n)'''
+#-----CLEAR IN LIST-------
+'''n=[1,2,3,4,5,6]
+n.clear()      #Delete The All Elements
+del n[:3]      #Delete The 0,1,2 indexing element
+del n[:]        #Delete The All Elements
+print(n)'''
+#----
+n=[1,2,3,4,5,6]
+
 
