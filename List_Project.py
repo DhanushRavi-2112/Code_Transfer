@@ -86,7 +86,103 @@ n.clear()      #Delete The All Elements
 del n[:3]      #Delete The 0,1,2 indexing element
 del n[:]        #Delete The All Elements
 print(n)'''
-#----
-n=[1,2,3,4,5,6]
+#------------------TUPLE()------------
+#----------Allow duplicate-------
+#--------We can stored any datatype----
+#--------We can't modify,add,remove----
+#------Immutable-------
+#PROGRAM:01
+'''a=(1,2,3,4,5)
+b=('hi','hello')
+print(b[0])'''
+#-----Type Cast------
+#PROGRAM:02
+'''n=(1,2,3,4,5)
+m=list(n)
+m.append(6)
+l=tuple(m)
+print(l)'''
+#---------------------------------------------------------------------
 
-
+#---------SET------{}---------
+#-----Not allowed duplicate values----
+#-----Unorder-----
+#-----Mutable----
+#-----Uniq data---
+#PROGRAM:03
+'''a={1,2,3,3,4,5}
+b={'hi','hellooo','welcome'}
+#print(a)
+#print(b)
+#a.add(6)    #Add new value
+#print(a)
+#-----Update
+a.update(b)     #Update means merge the two sets
+print(a)'''
+#--------------
+#PROGRAM:04
+#----Remove
+'''n={1,2,3,4}
+n.remove(1)       #Remove the value
+n.discard(2)      #These also remove the value
+print(n)'''
+#----Clear()
+'''n={1,2,3}
+n.clear()
+#print(n)
+m={}
+print(m)'''
+#------Union---Symbol is |
+'''n={1,2,3}
+m={3,4,5,6}
+print(n|m)       #merge  the sets and another datatypes like tuple.., 
+l=n.union(m)     # | means merge the only two sets
+print(l)'''
+#-----
+'''n={3,1,6,2,5}
+m=(7,8,9)
+l=n.union(m)
+print(l)'''
+#---Intersection--Symbol is &
+'''a={1,2,3,4}
+b={3,4,5,6}    #Print the common value of sets
+c={4,8,12}
+print(a&b&c)'''
+#----------------
+'''a={1,2,3,4}
+b=(3,4,5,6)   #If use operator work the same datype
+#c={4,8,12}   #Use keyword work with another datatype
+c=a.intersection(b)
+print(c)'''
+#----Difference----Symbol is -
+'''m={1,2,3,4}
+n={3,4,5,6}      #Print the left side varible difference values
+l=(4,5,6)        #Use keyword work with another datatype
+print(m-n)
+print(m.difference(l))'''
+#---Symmetric differnce-----
+'''x={1,2,3,4}
+y={3,4,5,6}     #Print the all difference values
+z=(4,8,12)         
+print(x.symmetric_difference(z))
+print(x^y)'''
+#------------------------
+#Differnce_Update:
+'''m={1,2,3,4}
+n={3,4,5,6}        #It means differnciate value store the first variable;
+m.difference_update(n)
+print(m)'''
+#---Symmetric_Update---
+'''m={1,2,3,4}
+n={3,4,5,6}       #Stored the all differnciate values in first variable;
+m.symmetric_difference_update(n)
+print(m)'''
+#---Intersection_Update---
+'''m={1,2,3,4}
+n={3,4,5,6}      #Stored the common value in first variable;
+m.intersection_update(n)
+print(m)'''
+#---Isdisjoint---
+m={1,2,3,4}
+n={3,4,5,6}     #two sets are in any common value print false;
+print(m.isdisjoint(n))
