@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 '''n=int(input("enter the value:"))
 for i in range(n):
     for j in range(n):
@@ -9,8 +8,6 @@ for i in range(n):
             print(' ',end='')
     print()
     '''
-from unicodedata import digit
->>>>>>> 83314213ba07f6650d0724bc82497c8707ef2e04
 
 '''
 num=5

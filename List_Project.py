@@ -2,7 +2,7 @@
 '''fruits=['APPLE','ORANGE','GRAPE']
 print(fruits)
 print(fruits[1])'''
-from itertools import count
+
 
 #------------------------------
 '''x=[[1,2],[3,4]]

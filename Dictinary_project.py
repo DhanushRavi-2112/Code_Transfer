@@ -44,7 +44,15 @@ print(l)'''
 #Syntax:  var.get('key')
 #----items-----
 #Syntax:  var.items()
-m={'x':10,'y':20,'z':30}
-print(m.items())
+'''m={'x':10,'y':20,'z':30}
+print(m.items())'''
+
+#
+m={'m1':{'name':'john','age':42},'m2':{'name':'wick','age':40}}
+l=(m.items()
+
+
+
+
 
 
